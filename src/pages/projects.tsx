@@ -1,6 +1,6 @@
 import { type GetStaticProps } from "next";
 import { type ReactNode } from "react";
-import { ProjectList } from "../components/ProjectCards";
+import { ProjectList } from "../components/ProjectCard";
 import { type Project } from "~/types";
 import projects from "~/constants/projects";
 import Layout from "../components/Layout";

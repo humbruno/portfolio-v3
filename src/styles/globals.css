@@ -5,6 +5,7 @@
 @layer base {
   body {
     @apply background text-gray-400;
+    white-space: pre-line;
   }
 
   a {

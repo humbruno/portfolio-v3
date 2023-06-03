@@ -11,7 +11,7 @@ export function ProjectCard({
 }: Project) {
   return (
     <article>
-      <div className="flex">
+      <div className="flex items-center">
         <h3 className="title h4 mb-1 flex">{title}</h3>
 
         {srcUrl && (
