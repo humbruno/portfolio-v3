@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { type ReactNode } from "react";
 import { navMenu, siteMetadata, socialMenu } from "~/constants";
-import AnimateOnAppear from "~/utils/AnimateOnAppear";
+import AnimateOnAppear from "~/components/AnimateOnAppear";
 
 interface LayoutProps {
   pageTitle?: string;

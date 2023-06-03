@@ -4,7 +4,7 @@ import { ProjectList } from "../components/ProjectCard";
 import { type Project } from "~/types";
 import projects from "~/constants/projects";
 import Layout from "../components/Layout";
-import AnimateOnAppear from "~/utils/AnimateOnAppear";
+import AnimateOnAppear from "~/components/AnimateOnAppear";
 
 interface PageProps {
   professionalProjects: Project[];

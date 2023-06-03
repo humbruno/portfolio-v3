@@ -1,5 +1,5 @@
 import Layout from "~/components/Layout";
-import AnimateOnAppear from "~/utils/AnimateOnAppear";
+import AnimateOnAppear from "~/components/AnimateOnAppear";
 
 function Home() {
   return (

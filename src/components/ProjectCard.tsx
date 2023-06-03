@@ -1,6 +1,6 @@
 import { type Project } from "~/types";
 import { ExternalLinkIcon, GithubIcon } from "~/components/Icons";
-import AnimateOnAppear from "~/utils/AnimateOnAppear";
+import AnimateOnAppear from "~/components/AnimateOnAppear";
 
 export function ProjectCard({
   title,

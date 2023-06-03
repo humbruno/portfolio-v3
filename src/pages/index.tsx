@@ -1,4 +1,4 @@
-import AnimateOnAppear from "~/utils/AnimateOnAppear";
+import AnimateOnAppear from "~/components/AnimateOnAppear";
 import Layout from "~/components/Layout";
 import { siteMetadata } from "~/constants";
 
