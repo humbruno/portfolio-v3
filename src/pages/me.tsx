@@ -11,9 +11,7 @@ function Home() {
               Some words about me
             </h1>
             <p className="h3 subtitle mb-4">
-              {`Hello! My name is Bruno, currently based in Lisbon, Portugal. I
-              enjoy writing web applications since Myspace was a thing. My main skill is
-              frontend development using React & TypeScript.`}
+              {`Hello! My name is Bruno, currently based in Lisbon, Portugal. I enjoy writing web applications since Myspace was a thing. My main skill is frontend development using React & TypeScript.`}
             </p>
             <p className="h3 subtitle mb-4 leading-10">
               {`Currently, I'm dipping my toes in backend development and learning Kotlin 🐍.`}

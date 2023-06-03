@@ -4,12 +4,13 @@ export const siteMetadata = {
   mail: "hsbruno1@gmail.com",
   title: "Passionate Frontend Developer",
   description:
-    "Hi there 👋 My name is Bruno and I love build some stuff living in the web. Welcome to my garden!",
+    "Hi there 👋 My name is Bruno and I love building stuff that lives on the web. Welcome to my garden!",
 };
 
 export const socialLinks = {
   github: "https://github.com/humbruno",
   linkedin: "https://www.linkedin.com/in/hsbruno/",
+  cv: "/cv.pdf",
 };
 
 export const navMenu = [
@@ -21,4 +22,5 @@ export const navMenu = [
 export const socialMenu = [
   { label: "github", link: socialLinks.github },
   { label: "linkedin", link: socialLinks.linkedin },
+  { label: "download.cv", link: socialLinks.cv },
 ];

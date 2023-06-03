@@ -84,6 +84,7 @@ function Footer() {
                   target="_blank"
                   rel="noreferrer"
                   className="px-2 font-mono"
+                  download="Bruno Santos CV - Frontend Developer"
                 >
                   {label}
                 </a>
