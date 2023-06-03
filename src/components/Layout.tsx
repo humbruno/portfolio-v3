@@ -14,7 +14,7 @@ interface LayoutProps {
 function Layout({ children, pageTitle, backgroundIndex }: LayoutProps) {
   const router = useRouter();
   const seo = {
-    title: pageTitle || "Bruno's portfolio",
+    title: pageTitle || "Bruno Santos - Frontend Developer",
     description: siteMetadata.description,
     siteName: siteMetadata.title,
     image: "",
