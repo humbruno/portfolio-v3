@@ -49,7 +49,7 @@ interface SectionProps {
 const Section = ({ title, children }: SectionProps) => (
   <section className="my-12 md:my-24">
     <AnimateOnAppear>
-      <h2 className="md:h3 mb-4 text-xl text-gray-50">
+      <h2 className="md:h3 mb-4 text-gray-50">
         <CodeTitle category={title} />
       </h2>
     </AnimateOnAppear>

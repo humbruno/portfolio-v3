@@ -35,9 +35,9 @@ function Layout({ children, pageTitle, backgroundIndex }: LayoutProps) {
         <meta property="og:url" content={seo.url} />
       </Head>
 
-      <div className={`Layout min-h-screen page-bg-${backgroundIndex || 4}`}>
+      <div className={`Layout page-bg-${backgroundIndex || 4}`}>
         <Header />
-        <main className="flex flex-col">{children}</main>
+        <main className="flex flex-1 flex-col">{children}</main>
         <Footer />
       </div>
     </>
@@ -73,7 +73,7 @@ function Header() {
 
 function Footer() {
   return (
-    <AnimateOnAppear className="mt-auto" direction="bottom">
+    <AnimateOnAppear direction="bottom">
       <footer className="mx-auto w-full max-w-7xl px-4 py-6">
         <nav>
           <ul className="flex justify-end">
