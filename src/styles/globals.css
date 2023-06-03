@@ -1,3 +1,107 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply background text-gray-400;
+  }
+
+  a {
+    @apply font-medium text-violet-400 hover:text-violet-300;
+  }
+
+  strong {
+    @apply font-bold;
+  }
+
+  pre,
+  code {
+    @apply font-mono;
+  }
+}
+
+@layer components {
+  .title {
+    @apply font-extrabold leading-none tracking-tighter text-gray-50;
+  }
+
+  .subtitle {
+    @apply font-thin leading-none text-gray-300;
+  }
+
+  .body {
+    @apply text-gray-400;
+  }
+
+  .h1 {
+    @apply text-glow text-5xl sm:text-6xl lg:text-7xl;
+  }
+
+  .h2 {
+    @apply text-glow text-3xl sm:text-4xl lg:text-5xl;
+  }
+
+  .h3 {
+    @apply text-glow text-2xl sm:text-3xl lg:text-4xl;
+  }
+
+  .h4 {
+    @apply text-2xl lg:text-3xl;
+  }
+
+  .h5 {
+    @apply text-xl lg:text-2xl;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 4rem rgb(192 219 255 / 30%),
+      0 0 1rem rgb(167 139 250 / 30%);
+  }
+
+  .aspect-macbook {
+    aspect-ratio: 1440 / 900;
+  }
+
+  .Layout {
+    @apply relative flex min-h-screen flex-col overflow-hidden bg-transparent;
+  }
+
+  .Layout::before {
+    @apply absolute h-full w-full;
+
+    filter: blur(30px) opacity(20%);
+    content: "";
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .Layout.page-bg-8::before {
+    background-image: url(../assets/bg-8.jpeg);
+  }
+  .Layout.page-bg-4::before {
+    background-image: url(../assets/bg-4.jpeg);
+  }
+
+  .background {
+    background-color: #040d21;
+  }
+
+  .code-effect::before {
+    content: ".";
+    @apply text-gray-50;
+  }
+  .code-effect::after {
+    content: "()";
+    @apply text-gray-50;
+  }
+
+  .react-effect::before {
+    content: "<";
+    @apply text-gray-50;
+  }
+  .react-effect::after {
+    content: "/>";
+    @apply ml-2 text-gray-50;
+  }
+}
