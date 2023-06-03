@@ -56,7 +56,7 @@ function Header() {
         <nav>
           <ul className="flex">
             {navMenu.map(({ label, path }) => (
-              <li key={path} className="">
+              <li key={path}>
                 <Link href={path}>
                   <span className="code-effect text-glow px-1 text-sm sm:px-2 sm:text-base">
                     {label}
