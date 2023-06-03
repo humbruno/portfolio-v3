@@ -24,3 +24,21 @@ export const socialMenu = [
   { label: "linkedin", link: socialLinks.linkedin },
   { label: "download.cv", link: socialLinks.cv },
 ];
+
+export const skills = [
+  "html",
+  "css/scss",
+  "javascript/typescript",
+  "rest-api",
+  "graphql",
+  "next.js",
+  "gatsby.js",
+  "zustand",
+  "redux",
+  "tailwind",
+  "git",
+  "jest",
+  "cypress",
+  "docker",
+  "aws",
+];
