@@ -8,7 +8,7 @@ function Contact({
   socialMenu,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
-    <Layout pageTitle="Say hello to Julien">
+    <Layout pageTitle="Say hello to Bruno">
       <AnimateOnAppear className="m-auto mx-auto max-w-4xl p-4">
         <h1 className="title h1 mb-4">
           <span className="inline-block pb-3">🍺</span>
