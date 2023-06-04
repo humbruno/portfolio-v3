@@ -1,8 +1,11 @@
 import Layout from "~/components/Layout";
 import AnimateOnAppear from "~/components/AnimateOnAppear";
 import { skills } from "~/constants";
+import { type InferGetServerSidePropsType } from "next";
 
-function Home() {
+function Home({
+  skills,
+}: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
     <Layout>
       <div className="mx-auto w-full max-w-4xl p-4">
@@ -34,5 +37,9 @@ function Home() {
     </Layout>
   );
 }
+
+export const getServerSideProps = () => {
+  return { props: { skills } };
+};
 
 export default Home;

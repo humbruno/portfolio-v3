@@ -1,4 +1,4 @@
-import { type GetStaticProps } from "next";
+import { type InferGetServerSidePropsType } from "next";
 import { type ReactNode } from "react";
 import { ProjectList } from "../components/ProjectCard";
 import { type Project } from "~/types";
@@ -6,12 +6,10 @@ import projects from "~/constants/projects";
 import Layout from "../components/Layout";
 import AnimateOnAppear from "~/components/AnimateOnAppear";
 
-interface PageProps {
-  professionalProjects: Project[];
-  personalProjects: Project[];
-}
-
-function Projects({ professionalProjects, personalProjects }: PageProps) {
+function Projects({
+  professionalProjects,
+  personalProjects,
+}: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
     <Layout backgroundIndex={8}>
       <div className="mx-auto w-full max-w-4xl p-4">
@@ -69,7 +67,7 @@ const CodeTitle = ({ category }: { category: string }) => (
 );
 
 // Filter projects at the build time
-export const getStaticProps: GetStaticProps = () => {
+export const getServerSideProps = () => {
   const personalProjects: Project[] = [];
   const professionalProjects: Project[] = [];
 
